@@ -1,0 +1,7 @@
+<h1>Hi {{currentUser.userName}}!</h1>
+<h3>All rooms users:</h3>
+<ul>
+  <li *ngFor="let room of rooms">
+    {{room.roomName}} ({{room.price}} {{room.capacity}} {{room.status}})
+  </li>
+</ul>
